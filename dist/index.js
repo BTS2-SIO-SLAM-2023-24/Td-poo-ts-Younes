@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const chat_1 = require("./chat");
+const chien_1 = require("./chien");
+const employe_1 = require("./employe");
+const chien1 = new chien_1.chien(1, "Buddy", 3, new Date("2023-09-01"), new Date("2023-09-15"), 'yuski');
+const chat1 = new chat_1.chat(1, "Whiskers", 2, new Date("2023-08-20"), new Date("2023-09-5"));
+const employe1 = new employe_1.employe(1, "John", chien1);
+const employe2 = new employe_1.employe(2, "Alice", chat1);
+const employe3 = new employe_1.employe(3, "bob", null);
